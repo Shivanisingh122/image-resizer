@@ -1,13 +1,16 @@
 {
-  "name": "image-resizer",
+  "name": "your-project-name",
   "version": "1.0.0",
   "main": "index.js",
   "scripts": {
-    "start": "concurrently \"yarn start-backend\" \"yarn start-frontend\"",
+    "start": "concurrently \"npm run start-backend\" \"npm run start-frontend\"",
     "start-backend": "node backend/server.js",
-    "start-frontend": "cd frontend && yarn start",
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "start-frontend": "cd frontend && npm start"
   },
+  "dependencies": {
+    "concurrently": "^8.0.1"
+  }
+}
   "dependencies": {
     "concurrently": "^8.0.1"
   },
